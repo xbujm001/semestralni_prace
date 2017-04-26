@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<konfigurace_kuki_TV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="bujalka_michal.xsd">
+	<konto>
+		<jmeno>Michal</jmeno>
+		<prijmeni>Bujalka</prijmeni>
+		<datum_narozeni>1994-11-22</datum_narozeni>
+		<adresa>Fejfarova 3, Praha 9</adresa>
+		<Kuki.ID>a1203567</Kuki.ID>
+		<tarif>Kuki 31</tarif>
+		<zaplaceno byloPlaceno="Ano">1</zaplaceno>
+	</konto>
+	<zarizeni id_zarizeni="1">
+		<set_top_box>
+			<verze_FW>Kuki (6.3.9600)</verze_FW>
+			<verze_portalu>20160616.000</verze_portalu> 
+			<MAC_adresa>6c:3b:e5:86:f8:f2</MAC_adresa>
+			<IP_adresa>192.168.150.9</IP_adresa>
+		</set_top_box>
+		<nastaveni>
+			<nastaveni_obrazu>
+				<rozliseni>1920x1080</rozliseni>
+				<pomer_zobrazeni>default</pomer_zobrazeni>
+				<jas>50</jas>
+				<kontrast>100</kontrast>
+				<sytost>60</sytost>
+				<ostrost>70</ostrost>
+				<protisvetlo>100</protisvetlo>
+				<obraz3D>Ano</obraz3D>
+				<jazyk jazykKuki="Cesky">1</jazyk> 									
+				<titulky zapnoutTitulky="Ano">0</titulky>							
+				<vypnoutObrazovku casovac="10">Ne</vypnoutObrazovku>
+			</nastaveni_obrazu>
+			<nastaveni_zvuku>
+				<zvuk obnovitZvukNa="20">1</zvuk>
+				<vyvazeni>0</vyvazeni>
+				<basy>20</basy>
+				<vysky>30</vysky>
+				<siroke_stereo>Ne</siroke_stereo>
+				<podporad_Dolby_Digital>Ano</podporad_Dolby_Digital>
+				<mikrofon>Ano</mikrofon>
+			</nastaveni_zvuku>
+			<instalace_kanalu>
+				<region>Cesko</region>	 								
+				<signal>Digitalni</signal>
+				<lazeni>Automaticke</lazeni>
+				<pocet_kanalu>31</pocet_kanalu>
+			</instalace_kanalu>
+			<poradi_kanalu>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>1</cislo_pozice>
+					<nazev_pozice>ČT 1</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>2</cislo_pozice>
+					<nazev_pozice>ČT 2</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>3</cislo_pozice>
+					<nazev_pozice>ČT 24</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>4</cislo_pozice>
+					<nazev_pozice>ČT Sport</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>5</cislo_pozice>
+					<nazev_pozice>Nova</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>6</cislo_pozice>
+					<nazev_pozice>Nova 2</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>7</cislo_pozice>
+					<nazev_pozice>Nova CINEMA</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>8</cislo_pozice>
+					<nazev_pozice>Nova GOLD</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>9</cislo_pozice>
+					<nazev_pozice>Nova ACTION</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>10</cislo_pozice>
+					<nazev_pozice>Prima</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>11</cislo_pozice>
+					<nazev_pozice>Prima COOL</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>12</cislo_pozice>
+					<nazev_pozice>Prima LOVE</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>13</cislo_pozice>
+					<nazev_pozice>TA3</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>14</cislo_pozice>
+					<nazev_pozice>Prima MAX</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>15</cislo_pozice>
+					<nazev_pozice>Disney Channel</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="0">
+					<cislo_pozice>16</cislo_pozice>
+					<nazev_pozice>Cinemax</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="1">
+					<cislo_pozice>17</cislo_pozice>
+					<nazev_pozice>FilmBox</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>18</cislo_pozice>
+					<nazev_pozice>EuroSport 1</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>19</cislo_pozice>
+					<nazev_pozice>EuroSport 2</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>20</cislo_pozice>
+					<nazev_pozice>Sport 1</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>21</cislo_pozice>
+					<nazev_pozice>Sport 2</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="0">
+					<cislo_pozice>22</cislo_pozice>
+					<nazev_pozice>AXN</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>23</cislo_pozice>
+					<nazev_pozice>CNN</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>24</cislo_pozice>
+					<nazev_pozice>BBC</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>25</cislo_pozice>
+					<nazev_pozice>Discovery</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="0">
+					<cislo_pozice>26</cislo_pozice>
+					<nazev_pozice>Spicy TV</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="0">
+					<cislo_pozice>27</cislo_pozice>
+					<nazev_pozice>XXX</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="1" oblibeny="1">
+					<cislo_pozice>28</cislo_pozice>
+					<nazev_pozice>Horror TV</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>29</cislo_pozice>
+					<nazev_pozice>MTV</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="1">
+					<cislo_pozice>30</cislo_pozice>
+					<nazev_pozice>Óčko TV</nazev_pozice>
+				</pozice>
+				<pozice rodicovskyZamek="0" oblibeny="0">
+					<cislo_pozice>31</cislo_pozice>
+					<nazev_pozice>Barrandov TV</nazev_pozice>
+				</pozice>
+			</poradi_kanalu>
+			<nahravani>
+				<zpetne_pretaceni povolitPretaceni="Ano">48 hodin</zpetne_pretaceni>
+				<nahravani_do_SET-TOP_boxu povolitNahravani="Ano">50 hodin</nahravani_do_SET-TOP_boxu>
+				<videoteka_serialy povolitSledovaniSerialu="Ano">6 mesicu</videoteka_serialy>
+				<videoteka_filmy povolitSledovaniFilmu="Ano">6 mesicu</videoteka_filmy>
+			</nahravani>
+		</nastaveni>
+	</zarizeni>    
+</konfigurace_kuki_TV>

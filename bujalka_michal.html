@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dokumentace k semestrální práci z předmětu Značkovací jazyky</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+				<div>
+					Odkaz na projekt:
+					<a href=!!!!!">GitHub projekt</a>
+				</div>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <header>
+                    <h1>Dokumentace</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#uvod">Úvod</a></li>
+                            <li><a href="#metodika">Metodika</a></li>
+                            <li><a href="#popis-el">Popis elementů</a></li>
+                            <li><a href="#popis-at">Popis atributů</a></li>
+                            <li><a href="#popis-tr">Popis transformace</a></li>
+                            <li><a href="#zaver">Závěr</a></li>
+                        </ul>
+                    </nav>
+                </header>
+				<br>
+                <section>
+                    <h2 id="uvod">Úvod</h2>
+                    <p>XML soubor slouží k nastavení chytré televize Kuki. Jednotlivé složky, byly převzány z prostředí Kuki TV a nastavení samotné televize. Projekt se skládá ze souborů XML (samotné nastavení televize), XSD (schéma konfigurace), XSL (potřebný pro transformaci do JSON), JSON a HTML5 (dokumentace).</p>
+                </section>
+				<br>
+                <section>
+                    <h2 id="metodika">Metodika</h2>
+                    <p>Programy a pomůcky pro vytvoření tohoto projektu byly:</p>
+					<ul>
+						<li>Notepad++ + Plugin "XML Tools"- použit na psaní XML,XSD,XSL a HTML5 souborů a pro provedení transformace</li>
+						<li>http://www.utilities-online.info/xsdvalidation/#.WPFZN9KLSUk - webová stránka pro porovnání správnosti XML a XSD souborů</li>
+						<li>https://www.w3schools.com - informace z těchto webových stránek pomohli při řešení problémů</li>
+						<li>https://validator.w3.org/nu/#textarea - validátor pro ověření HTML5</li>
+					</ul>
+                </section>
+				<br>
+                <section>
+                    <h2 id="popis-el">Popis elementů</h2>
+					<table>
+                        <tr>
+                            <th>Element</th>
+                            <th>Popis</th>
+                            <th>Hodnoty</th>
+                        </tr>
+                        <tr>
+                            <td>konfigurace_kuki_TV</td>
+                            <td>Hlavní element, veškeré ostatní jsou vnořeny do tohoto</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+                        <tr>
+                            <td>konto</td>
+                            <td>Obal, který obsahuje informace o zákazníkovi.</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+						<tr>
+                            <td>jmeno</td>
+                            <td>Jméno zakázníka.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>prijmeni</td>
+                            <td>Příjmení zákazníka.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>datum_narozeni</td>
+                            <td>Datum narození zákazníka.</td>
+                            <td>Date</td>
+                        </tr>
+						<tr>
+                            <td>adresa</td>
+                            <td>Adresa zákazníka.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>Kuki.ID</td>
+                            <td>Zákazníkův login.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>tarif</td>
+                            <td>Tarif zákazníka.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>zaplaceno</td>
+                            <td>Zobrazení platby za minulý měsíc.</td>
+                            <td>1 nebo 0</td>
+                        </tr>
+						<tr>
+                            <td>zarizeni</td>
+                            <td>Zobrazí dané zařízení.</td>
+                            <td>1 nebo 0</td>
+                        </tr>
+						<tr>
+                            <td>set_top_box</td>
+                            <td>Obal, informace o set-top boxu.</td>
+                            <td>Nenabývá žádných hodnot</td>
+                        </tr>
+						<tr>
+                            <td>Verze_FW</td>
+                            <td>Verze FW set-top boxu.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>verze_portalu</td>
+                            <td>Verze portálu na který se zákazník připojuje.</td>
+                            <td>Float</td>
+                        </tr>
+						<tr>
+                            <td>MAC_adresa</td>
+                            <td>MAC adresa set-top boxu.</td>
+                            <td>Formát MAC adresa.</td>
+                        </tr>
+						<tr>
+                            <td>IP_adresa</td>
+                            <td>IP adresa set-top boxu.</td>
+                            <td>Formát IP adresa</td>
+                        </tr>
+						<tr>
+                            <td>nastaveni</td>
+                            <td>Obal celého nastaevní set-top boxu.</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+						<tr>
+                            <td>nastaveni_obrazu</td>
+                            <td>Obal nastavení obrazu TV.</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+						<tr>
+                            <td>rozliseni</td>
+                            <td>Nastaví typ rozlišení.</td>
+                            <td>Číslo x číslo</td>
+                        </tr>
+						<tr>
+                            <td>pomer_zobrazeni</td>
+                            <td>Nastaví poměr stran.</td>
+                            <td>Číslo x číslo</td>
+                        </tr>
+						<tr>
+                            <td>jas</td>
+                            <td>Nastaven intenzity jasu.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>kontrast</td>
+                            <td>Nastavení intenzity kontrastu.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>sytos</td>
+                            <td>Nastavení intenzity sytosti.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>ostrost</td>
+                            <td>Nastavení intenzity ostrosti.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>protisvetlo</td>
+                            <td>Nastavení intenzity protisvětla.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>obraz3D</td>
+                            <td>Zobrazení obrazu ve 3D.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>jazyk</td>
+                            <td>Výběr jazyku aplikace.</td>
+                            <td>1 nebo 0</td>
+                        </tr>
+						<tr>
+                            <td>titulky</td>
+                            <td>Zapnout nebo vypnout titulky.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>vypnoutObrazovku</td>
+                            <td>Nastavení vypnutí obrazovky</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>nastaveni_zvuku</td>
+                            <td>Obal nastavení zvuku.</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+						<tr>
+                            <td>zvuk</td>
+                            <td>Nastavení hlasitosti zvuku.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>vyvazeni</td>
+                            <td>Nastavení vyvážení zvuku.</td>
+                            <td>-50 až 50</td>
+                        </tr>
+						<tr>
+                            <td>basy</td>
+                            <td>Nastavení intenzity basů.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>vysky</td>
+                            <td>Nastavení intenzity výšek.</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>siroke_stereo</td>
+                            <td>Zapnutí, vypnutí širokého sterea.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>podporad_Dolby_Digital</td>
+                            <td>Zapnutí, vypnutí Dolby Digital</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>mikrofon</td>
+                            <td>Zapnutí, vypnutí mikrofonu.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>instalace_kanalu</td>
+                            <td>Obal pro instalaci televizních kanálu.</td>
+                            <td>Nenabývá žádných hodnot</td>
+                        </tr>
+						<tr>
+                            <td>region</td>
+                            <td>Výběr regiónů, v které se zákazník nachází.</td>
+                            <td>
+							    <ul>
+									<li>Cesko</li>
+									<li>Slovensko</li>
+									<li>Nemecko</li>
+									<li>Francie</li>
+									<li>Anglie</li>
+									<li>Nizozemsko</li>
+									<li>Belgie</li>
+									<li>Italie</li>
+									<li>Rakousko</li>
+									<li>Rusko</li>
+									<li>Ukrajina</li>
+									<li>Švédsko</li>
+								</ul>
+							</td>
+                        </tr>
+						<tr>
+                            <td>signal</td>
+                            <td>Výběr signálu.</td>
+							<td>
+								<ul>
+									<li>Digitální</li>
+									<li>Analogový</li>
+								</ul>
+							</td>	
+                        </tr>
+						<tr>
+                            <td>lazeni</td>
+                            <td>Výběr lazení.</td>
+                            <td>
+								<ul>
+									<li>Automatické</li>
+									<li>Manuální</li>
+								</ul>
+							</td>
+                        </tr>
+						<tr>
+                            <td>pocet_kanalu</td>
+                            <td>Počet nalezených kanálu.</td>
+                            <td>Kladné číslo</td>
+                        </tr>
+						<tr>
+                            <td>poradi_kanalu</td>
+                            <td>Obal pro pořadí kanálu.</td>
+                            <td>Nenabývá žádných hodnot</td>
+                        </tr>
+						<tr>
+                            <td>pozice</td>
+                            <td>Nastaví přístup kanálu.</td>
+                            <td>Nenabývá žádných hodnot.</td>
+                        </tr>
+						<tr>
+                            <td>cislo_pozice</td>
+                            <td>Nastavení čísla/pozice kanálu.</td>
+                            <td>Kladné číslo.</td>
+                        </tr>
+						<tr>
+                            <td>nazev_pozice</td>
+                            <td>Název kanálu.</td>
+                            <td>String</td>
+                        </tr>
+						<tr>
+                            <td>nahravani</td>
+                            <td>Obal pro nastavení nahrávání set-top boxu.</td>
+                            <td>Nenabývá žádných hodnot</td>
+                        </tr>
+						<tr>
+                            <td>zpetne_pretaceni</td>
+                            <td>Počet hodin, v kterých lze přetáčet zpětně.</td>
+                            <td>Číslo</td>
+                        </tr>
+						<tr>
+                            <td>nahravani_do_SET-TOP_boxu</td>
+                            <td>Počet hodin, v kterých lze nahrát na SET-TOP box.</td>
+                            <td></td>
+                        </tr>
+						<tr>
+                            <td>videoteka_serialy</td>
+                            <td>Přístup do videotéky seriály.</td>
+                            <td>Číslo</td>
+                        </tr>
+						<tr>
+                            <td>videoteka_filmy</td>
+                            <td>Přístup do videotéky filmy.</td>
+                            <td>Číslo</td>
+                        </tr>
+                    </table>					
+                </section>
+				<br>
+                <section>
+                    <h2 id="popis-at">Popis atributů</h2>
+                    <p>V této části jsou vypsané a popsané jednotlivé atributy a jaké hodnoty mohou nabývat.</p>
+                    <table>
+                        <tr>
+                            <td>byloPlaceno</td>
+                            <td>Možnost zobrazení, zda bylo zaplaceno za minulý měsíc.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>id_zarizeni</td>
+                            <td>Výběr zařízení (zobrazení).</td>
+                            <td>Kladné celé číslo.</td>
+                        </tr>
+						<tr>
+                            <td>jazykKuki</td>
+                            <td>Nastavení primárního jazyku aplikace.</td>
+							<td>	
+								<ul>
+									<li>Cesky</li>
+									<li>Anglicky</li>
+									<li>Nemecky</li>
+									<li>Spanelsky</li>
+								</ul>
+							</td>
+                        </tr>
+						<tr>
+                            <td>zapnoutTitulky</td>
+                            <td>Po zapnutí TV zapnout titulky.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>casovac</td>
+                            <td>Nastavení času (sekundy), po kterém se vypne TV.</td>
+                            <td>0 až 7200</td>
+                        </tr>
+						<tr>
+                            <td>obnovitZvukNa</td>
+                            <td>Po zapnutí TV obnovit zvuk na:</td>
+                            <td>0 až 100</td>
+                        </tr>
+						<tr>
+                            <td>rodicovskyZamek</td>
+                            <td>Zamknutí kanálu</td>
+                            <td>0 nebo 1</td>
+                        </tr>
+						<tr>
+                            <td>oblibeny</td>
+                            <td>Přidání kánálu do seznamu oblíbených.</td>
+                            <td>0 nebo 1</td>
+                        </tr>
+						<tr>
+                            <td>povolitPretaceni</td>
+                            <td>Povolení zpětného přetáčení.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>povolitNahravani</td>
+                            <td>Povolení nahrávání.</td>
+                            <td>Ane Ne</td>
+                        </tr>
+						<tr>
+                            <td>povolitSledovaniSerialu</td>
+                            <td>Povolení sledování seriálů ve videotéce.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						<tr>
+                            <td>povolitSledovaniFilmu</td>
+                            <td>Povolení sledování filmů ve videotéce.</td>
+                            <td>Ano Ne</td>
+                        </tr>
+						
+                    </table>
+                </section>
+				<br>
+                <section>
+                    <h2 id="popis-tr">Popis transformace</h2>
+                    <p>Transformace nejdříve vypíše informace o kontu uživatele, tzn. jméno, příjmení, datum narozeni, adresa, ID Kuki a tarif uživatele. Následně vypíše ke každému zařízení jeho číslo ID a následně všechny pozice kanálu. U pozic kanálu vypíše zda je kanál zamčený a zda se náchází v seznamu oblíbených kanálů.</p>
+                </section>
+				<br>
+                <section>
+                    <h2 id="zaver">Závěr</h2>
+                    <p>S XML jsme se setkali již v prvním ročníku a to čtení a ukládání z programů. Nyní jsem si vyzkoušel vlastní tvorbu XML konfigurace, vytvoření XML schéma a následně její transformace do JSON. Veškérý postup a detaily tohoto semestrální projektu byly zapsány do této dokumentace napsané v HTML5.</p>
+                </section>
+            </article> 
+        </main>
+        <footer>
+            <p><i>Vytvořil Michal Bujalka 2. ročník INFO CŽU</i></p>
+        </footer>
+    </body>
+</html>

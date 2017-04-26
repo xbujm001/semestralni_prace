@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" elementFormDefault="qualified">
+	<xs:element name="konfigurace_kuki_TV">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="konto">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="jmeno"/>
+							<xs:element type="xs:string" name="prijmeni"/>
+							<xs:element type="xs:date" name="datum_narozeni"/>
+							<xs:element type="xs:string" name="adresa"/>
+							<xs:element type="xs:string" name="Kuki.ID"/>
+							<xs:element type="xs:string" name="tarif"/>
+							<xs:element name="zaplaceno">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="trueFalse">
+																	<xs:attribute type="typAnoNe" name="byloPlaceno"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="zarizeni">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="set_top_box">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="verze_FW"/>
+										<xs:element type="xs:float" name="verze_portalu"/>
+										<xs:element type="macAdresa" name="MAC_adresa"/>
+										<xs:element type="ipAdresa" name="IP_adresa"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="nastaveni">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nastaveni_obrazu">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="typCisloCislo" name="rozliseni"/>
+													<xs:element type="typCisloCislo" name="pomer_zobrazeni"/>
+													<xs:element type="typRozsahDoSta" name="jas"/>
+													<xs:element type="typRozsahDoSta" name="kontrast"/>
+													<xs:element type="typRozsahDoSta" name="sytost"/>
+													<xs:element type="typRozsahDoSta" name="ostrost"/>
+													<xs:element type="typRozsahDoSta" name="protisvetlo"/>
+													<xs:element type="typAnoNe" name="obraz3D"/>
+													<xs:element name="jazyk">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="trueFalse">
+																	<xs:attribute type="typJazyk" name="jazykKuki"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="titulky">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="trueFalse">
+																	<xs:attribute type="typAnoNe" name="zapnoutTitulky"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="vypnoutObrazovku">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="typAnoNe">
+																	<xs:attribute type="typCasovac" name="casovac"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="nastaveni_zvuku">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="zvuk">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="trueFalse">
+																	<xs:attribute type="typRozsahDoSta" name="obnovitZvukNa"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element type="typVyvazeni" name="vyvazeni"/>
+													<xs:element type="typRozsahDoSta" name="basy"/>
+													<xs:element type="typRozsahDoSta" name="vysky"/>
+													<xs:element type="typAnoNe" name="siroke_stereo"/>
+													<xs:element type="typAnoNe" name="podporad_Dolby_Digital"/>
+													<xs:element type="typAnoNe" name="mikrofon"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="instalace_kanalu">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="typRegion" name="region"/>
+													<xs:element type="typSignal" name="signal"/>
+													<xs:element type="typLazeni" name="lazeni"/>
+													<xs:element type="typKladneCislo" name="pocet_kanalu"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="poradi_kanalu">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="pozice" maxOccurs="unbounded" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element type="typKladneCislo" name="cislo_pozice"/>
+																<xs:element type="xs:string" name="nazev_pozice"/>
+															</xs:sequence>
+															<xs:attribute type="trueFalse" name="rodicovskyZamek"/>
+															<xs:attribute type="trueFalse" name="oblibeny"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="nahravani">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="zpetne_pretaceni">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="typAnoNe" name="povolitPretaceni"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="nahravani_do_SET-TOP_boxu">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="typAnoNe" name="povolitNahravani"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="videoteka_serialy">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="typAnoNe" name="povolitSledovaniSerialu"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="videoteka_filmy">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="typAnoNe" name="povolitSledovaniFilmu"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute type="trueFalse" name="id_zarizeni"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="trueFalse">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ipAdresa">
+		<xs:restriction base="xs:string">
+			<xs:pattern  value="(([2]?[0-5]?[0-5])|([0-1]?[0-9]?[0-9]))\.(([2]?[0-5]?[0-5])|([0-1]?[0-9]?[0-9]))\.(([2]?[0-5]?[0-5])|([0-1]?[0-9]?[0-9]))\.(([2]?[0-5]?[0-5])|([0-1]?[0-9]?[0-9]))" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="macAdresa">
+		<xs:restriction base="xs:string">
+			<xs:pattern  value="[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]:[0-9A-Fa-f][0-9A-Fa-f]" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typCisloCislo">
+		<xs:restriction base="xs:string">
+			<xs:pattern  value="([0-9]+(x|:)[0-9]+)|default" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typRozsahDoSta">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typJazyk">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Cesky"/>
+			<xs:enumeration value="Anglicky"/>
+			<xs:enumeration value="Nemecky"/>
+			<xs:enumeration value="Spanelsky"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typRegion">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Cesko"/>
+			<xs:enumeration value="Slovensko"/>
+			<xs:enumeration value="Nemecko"/>
+			<xs:enumeration value="Francie"/>
+			<xs:enumeration value="Anglie"/>
+			<xs:enumeration value="Nizozemsko"/>
+			<xs:enumeration value="Belgie"/>
+			<xs:enumeration value="Italie"/>
+			<xs:enumeration value="Rakousko"/>
+			<xs:enumeration value="Rusko"/>
+			<xs:enumeration value="Ukrajina"/>
+			<xs:enumeration value="Svedsko"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typAnoNe">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Ano"/>
+			<xs:enumeration value="Ne"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typCasovac">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="7200"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typVyvazeni">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="-50"/>
+			<xs:maxInclusive value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typSignal">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Digitalni"/>
+			<xs:enumeration value="Analogovy"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typKladneCislo">
+		<xs:restriction base="xs:integer"> 
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typLazeni">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Automaticke"/>
+			<xs:enumeration value="Manualni"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

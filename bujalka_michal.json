@@ -1,0 +1,298 @@
+
+	{
+	"konto": {
+		"Jmeno": "Michal",
+		"Prijmeni": "Bujalka",
+		"Datum narozeni": "1994-11-22",
+		"Adresa": "Fejfarova 3, Praha 9",
+		"ID Kuki": "a1203567",
+		"Tarif": "Kuki 31"
+	},
+	"kanály": {
+		
+		"zarizeni": {
+			"ID zarizeni": "1",
+			
+			"pozice 1":
+				{
+				"Nazev pozice": "ČT 1",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 2":
+				{
+				"Nazev pozice": "ČT 2",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 3":
+				{
+				"Nazev pozice": "ČT 24",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 4":
+				{
+				"Nazev pozice": "ČT Sport",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 5":
+				{
+				"Nazev pozice": "Nova",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 6":
+				{
+				"Nazev pozice": "Nova 2",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 7":
+				{
+				"Nazev pozice": "Nova CINEMA",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 8":
+				{
+				"Nazev pozice": "Nova GOLD",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 9":
+				{
+				"Nazev pozice": "Nova ACTION",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 10":
+				{
+				"Nazev pozice": "Prima",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 11":
+				{
+				"Nazev pozice": "Prima COOL",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 12":
+				{
+				"Nazev pozice": "Prima LOVE",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 13":
+				{
+				"Nazev pozice": "TA3",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 14":
+				{
+				"Nazev pozice": "Prima MAX",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 15":
+				{
+				"Nazev pozice": "Disney Channel",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 16":
+				{
+				"Nazev pozice": "Cinemax",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 17":
+				{
+				"Nazev pozice": "FilmBox",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 18":
+				{
+				"Nazev pozice": "EuroSport 1",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 19":
+				{
+				"Nazev pozice": "EuroSport 2",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 20":
+				{
+				"Nazev pozice": "Sport 1",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 21":
+				{
+				"Nazev pozice": "Sport 2",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 22":
+				{
+				"Nazev pozice": "AXN",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 23":
+				{
+				"Nazev pozice": "CNN",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 24":
+				{
+				"Nazev pozice": "BBC",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 25":
+				{
+				"Nazev pozice": "Discovery",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 26":
+				{
+				"Nazev pozice": "Spicy TV",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 27":
+				{
+				"Nazev pozice": "XXX",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 28":
+				{
+				"Nazev pozice": "Horror TV",
+				
+				"Rodicovsky zamek:": "Zapnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 29":
+				{
+				"Nazev pozice": "MTV",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				},
+			"pozice 30":
+				{
+				"Nazev pozice": "Óčko TV",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ano"
+					
+				},
+			"pozice 31":
+				{
+				"Nazev pozice": "Barrandov TV",
+				
+				"Rodicovsky zamek:": "Vypnuty"
+					
+				"V oblíbených:": "Ne"
+					
+				}
+			}
+		}
+	}
+	
